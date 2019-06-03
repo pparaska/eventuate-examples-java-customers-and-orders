@@ -73,7 +73,7 @@ services:
   orderhistoryqueryside:
     build: ./order-history-view-service/
     ports:
-      - "7878:8080"
+      - "8082:8080"
     links:
       - mongodb
       - mysql
@@ -92,7 +92,7 @@ services:
   ordercommandside:
     build: ./order-service/
     ports:
-      - "9999:8080"
+      - "8083:8080"
     links:
       - mysql
       - kafka
